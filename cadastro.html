@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aclonica&family=Lilita+One&family=Livvic&family=Mogra&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <div class="container-xl bg-sucess ">
+        <br>
+        <br>
+        <nav class="navbar navbar-expand-lg bg-body align-self-end">
+            <div class="container-fluid">
+                <img src="img/logo.png" alt="Bootstrap" width="70" height="70">
+                <button class="navbar-toggler justify-content-end" aria-hidden="true" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link justify-content-end" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Cadastro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="maincadastro position-relative">
+
+            <div class="col formulario">
+                <form class="row g-3">
+                    <div class="col-md-12">
+                        <label for="inputNome" class="form-label">Nome Completo*</label>
+                        <input type="nome" class="form-control" id="inputNome">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Endereço</label>
+                        <input type="text" class="form-control" id="inputAddress"
+                            placeholder="Rua Duarte da Silveira S/N">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Data Nascimento</label>
+                        <input type="data" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputTelefone" class="form-label">Telefone</label>
+                        <input type="telefone" class="form-control" id="inputTelefone">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="inputCity" class="form-label">Cidade</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputState" class="form-label">Estado</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Paraíba</option>
+                            <option>Acre</option>
+                            <option>Alagoas</option>
+                            <option>Amapá</option>
+                            <option>Amazonas</option>
+                            <option>Bahia</option>
+                            <option>Ceará</option>
+                            <option>Espírito Santo</option>
+                            <option>Goiás</option>
+                            <option>Maranhão</option>
+                            <option>Mato Grosso</option>
+                            <option>Mato Grosso do Sul</option>
+                            <option>Minas Gerais</option>
+                            <option>Pará</option>
+                            <option>Paraná</option>
+                            <option>Pernambuco</option>
+                            <option>Piauí</option>
+                            <option>Rio de Janeiro</option>
+                            <option>Rio Grande do Norte</option>
+                            <option>Rio Grande do Sul</option>
+                            <option>Rondônia</option>
+                            <option>Roraima</option>
+                            <option>Santa Catarina</option>
+                            <option>São Paulo</option>
+                            <option>Sergipe</option>
+                            <option>Tocantins</option>
+                            <option>Distrito Federal</option>
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="inputState" class="form-label">Tipo de Plano</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Smart</option>
+                            <option>Essencial</option>
+                            <option>Black</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputState" class="form-label">Forma de Pagamento</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Cartão</option>
+                            <option>Pix</option>
+                            <option>Dinheiro</option>
+                        </select>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Masculino
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Feminino
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                            <label class="form-check-label" for="flexRadioDefault3">
+                                Outro
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#meuModal">Cadastrar</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="quadrado_funcionamento col">
+                <p class="text-center texto_horario">Horário de Funcionamento</p>
+                <p class="text-center">Segunda - Sexta 5h - 23h</p>
+                <p class="text-center">Sábados 8h - 18h</p>
+                <p class="text-center">Dom / Feriados 9h - 15h</p>
+
+            </div>
+        </div>
+        <div class="footer ">
+            <p>BR 230 – Km 22, Água Fria João Pessoa – PB | CEP 58XXX-000</p>
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#meuModal">
+        Abrir Modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="meuModal" tabindex="0" aria-labelledby="exampleModalLabel" >
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <img src="img/sucesso.png" alt="Bootstrap" >
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
